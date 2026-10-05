@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f1117;
+  color: #ffffff;
+}
+
+.app {
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+.header {
+  text-align: center;
+  padding: 45px 20px 30px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 42px;
+}
+
+.header p {
+  margin-top: 10px;
+  color: #a8b0c0;
+  font-size: 17px;
+}
+
+.container {
+  width: 90%;
+  max-width: 850px;
+  margin: auto;
+}
+
+.card {
+  background: #181b24;
+  border: 1px solid #2a2e3a;
+  border-radius: 14px;
+  padding: 30px;
+  margin-bottom: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 25px;
+}
+
+.card label {
+  display: block;
+  margin-top: 18px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #dce1ec;
+}
+
+.card input,
+.card select {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #383d4b;
+  border-radius: 8px;
+  background: #101219;
+  color: white;
+  font-size: 15px;
+  outline: none;
+}
+
+.card input:focus,
+.card select:focus {
+  border-color: #8b5cf6;
+}
+
+.card button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #7c3aed;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: #6d28d9;
+}
+
+.card button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.result {
+  white-space: normal;
+}
+
+.result pre {
+  white-space: pre-wrap;
+  background: #101219;
+  border: 1px solid #2d3240;
+  border-radius: 10px;
+  padding: 20px;
+  line-height: 1.6;
+  color: #e5e7eb;
+  overflow-x: auto;
+}
+
+.approval {
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #20232d;
+  border: 1px solid #383d4b;
+}
+
+.approval h3 {
+  margin-top: 0;
+}
+
+.approval p {
+  color: #aeb5c4;
+}
+
+.approval-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.approval-buttons button {
+  margin-top: 10px;
+}
+
+.approval-buttons .reject {
+  background: #b42318;
+}
+
+.approval-buttons .reject:hover {
+  background: #912018;
+}
+
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 32px;
+  }
+
+  .container {
+    width: 94%;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .approval-buttons {
+    flex-direction: column;
+  }
+}
+.feedback-section {
+  margin-top: 20px;
+}
+
+.feedback-section label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #dce1ec;
+}
+
+.feedback-section textarea {
+  width: 100%;
+  min-height: 110px;
+  padding: 13px 14px;
+  border: 1px solid #383d4b;
+  border-radius: 8px;
+  background: #101219;
+  color: white;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+  resize: vertical;
+  outline: none;
+}
+
+.feedback-section textarea:focus {
+  border-color: #8b5cf6;
+}
+
+.feedback-section button {
+  margin-top: 15px;
+}
